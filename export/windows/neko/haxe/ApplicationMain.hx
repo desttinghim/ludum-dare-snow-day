@@ -43,8 +43,8 @@ class ApplicationMain {
 				
 				#if mobile
 				
-				forceWidth = 480;
-				forceHeight = 320;
+				forceWidth = 640;
+				forceHeight = 480;
 				
 				container = new flash.display.Sprite ();
 				barA = new flash.display.Sprite ();
@@ -113,7 +113,7 @@ class ApplicationMain {
 				}
 				
 			},
-			480, 320, 
+			640, 480, 
 			60, 
 			0,
 			(true ? flash.Lib.HARDWARE : 0) |
@@ -234,13 +234,13 @@ class ScaledStage extends flash.display.Stage {
 	
 	private override function get_stageHeight ():Int {
 		
-		return 320;
+		return 480;
 	
 	}
 	
 	private override function get_stageWidth ():Int {
 		
-		return 480;
+		return 640;
 	
 	}
 	
@@ -311,11 +311,11 @@ class ApplicationMain {
 		wx.App.boot (function () {
 			
 			
-			frame = wx.Frame.create (null, null, "snow-day", null, { width: 480, height: 320 });
+			frame = wx.Frame.create (null, null, "snow-day", null, { width: 640, height: 480 });
 			
 			
 			#if openfl
-			var stage = wx.NMEStage.create (frame, null, null, { width: 480, height: 320 });
+			var stage = wx.NMEStage.create (frame, null, null, { width: 640, height: 480 });
 			#end
 			
 			var hasMain = false;

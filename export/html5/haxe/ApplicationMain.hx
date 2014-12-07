@@ -53,7 +53,10 @@ class ApplicationMain {
 		
 		// assets
 		loadBinary("assets/data/data-goes-here.txt");
+		loadBinary("assets/data/room.oel");
+		loadBinary("assets/data/snow-day.oep");
 		loadBinary("assets/images/images-go-here.txt");
+		loadFile("assets/images/tiles.png");
 		loadBinary("assets/music/music-goes-here.txt");
 		loadBinary("assets/sounds/sounds-go-here.txt");
 		loadSound("assets/sounds/beep.mp3");

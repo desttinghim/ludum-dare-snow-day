@@ -31,8 +31,24 @@ class ApplicationMain {
 		types.push (AssetType.TEXT);
 		
 		
+		urls.push ("assets/data/room.oel");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/data/roomFantasy.oel");
+		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/data/snow-day.oep");
+		types.push (AssetType.TEXT);
+		
+		
 		urls.push ("assets/images/images-go-here.txt");
 		types.push (AssetType.TEXT);
+		
+		
+		urls.push ("assets/images/tiles.png");
+		types.push (AssetType.IMAGE);
 		
 		
 		urls.push ("assets/music/music-goes-here.txt");

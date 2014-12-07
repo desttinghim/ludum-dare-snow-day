@@ -50,6 +50,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/data/room.oel", "assets/data/room.oel");
 		type.set ("assets/data/room.oel", AssetType.TEXT);
+		path.set ("assets/data/roomFantasy.oel", "assets/data/roomFantasy.oel");
+		type.set ("assets/data/roomFantasy.oel", AssetType.TEXT);
 		path.set ("assets/data/snow-day.oep", "assets/data/snow-day.oep");
 		type.set ("assets/data/snow-day.oep", AssetType.TEXT);
 		path.set ("assets/images/images-go-here.txt", "assets/images/images-go-here.txt");
@@ -73,6 +75,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		id = "assets/data/room.oel";
+		path.set (id, id);
+		type.set (id, AssetType.TEXT);
+		id = "assets/data/roomFantasy.oel";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
 		id = "assets/data/snow-day.oep";
@@ -112,9 +117,11 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
+		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -752,7 +759,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
+
 #elseif html5
+
 
 
 
